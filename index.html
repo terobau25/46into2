@@ -1,36 +1,41 @@
 <!DOCTYPE html>
-<html lang="ja" dir="ltr">
+
+<html lang="ja">
+
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta charset="UTF-8">
+    <title>表のCSS指定</title>
     <style>
-      table{
-        border-collapse:separate;
+    table{
+          border-collapse: separate;
       }
       th,td{
-        border: solid 2px #000000;
-
-      }
-      th{
-        background-color: green;
+        border: solid 2px;
         font-weight: bold;
-        color:#ffffff;
       }
-
+       th{
+         background-color: grey;
+       }
+       caption{
+         caption-side: bottom;
+         text-align:right;
+         padding-top: 3px;
+         font-size: 14px;
+       }
     </style>
-
   </head>
+
   <body>
-    <h1>商品情報</h1>
-  
-    <h2>内容量と価格の一覧</h2>
+    <h1>入場料</h1>
+    <h2>Highly Qualified!!!</h2>
     <table>
-    <tr><th>サイズ</th><th>内容量</th><th>価格</th></tr>
-    <tr><th>通常サイズ</th><td>500g</td><td>480円</td></tr>
-    <tr><th>大サイズ</th><td>800g</td><td>720円</td></tr>
-    <tr><th>特大サイズ</th><td>1200g</td><td>1000円</td></tr>
-
+      <caption>※Admission fee revised in October 2019</caption>
+      <tr><th></th><th>平日</th><th style="border:none;">土曜</th><th>日曜・祝日</th></tr>
+      <tr><th>大　人</th><td>1,500円</td><td>1,800円</td><td>1,900円</td></tr>
+      <tr><th>高校生</th><td>1,200円</td><td>1,400円</td><td>1,500円</td></tr>
+      <tr><th>中学生</th><td>900円</td><td>1,100円</td><td>1,200円</td></tr>
+      <tr><th>小学生</th><td>500円</td><td>800円</td><td>1,000円</td></tr>
     </table>
-
   </body>
+
 </html>
